@@ -26,6 +26,9 @@ const httpRequest = (options: UploadRequestOptions) => {
 </template>
 <style lang='scss' scoped>
 :deep(.el-upload-dragger){
-    @apply p-3;
+    @apply p-3 m-0 border border-gray-200;
+    &.is-dragover{
+      @apply p-3 m-0 border;
+    }
 }
 </style>
